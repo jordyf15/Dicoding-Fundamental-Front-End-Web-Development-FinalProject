@@ -1,0 +1,158 @@
+main #searchFilterContainer{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 100px;
+}
+main #searchFilterContainer #searchForm{
+    width: 60vw;
+    display: flex;
+}
+main #searchFilterContainer #searchForm input{
+    flex-grow: 1;
+    border: 2px solid#a4b0be;
+    border-right: none;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 14px;
+    border-radius: 15px 0px 0px 15px;
+    min-width: 100px;
+}
+main #searchFilterContainer #searchForm button{
+    background-color: red;
+    border: 2px solid #a4b0be;
+    font-size: 14px;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+}
+
+/* drowdown filter list */
+main #searchFilterContainer #dropdown button{
+    background-color: red;
+    border: 2px solid #a4b0be;
+    font-size: 14px;
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+}
+main #searchFilterContainer #filterListContainer{
+    display: none;
+}
+main #searchFilterContainer #dropdown:hover #filterListContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family:sans-serif;
+    width: 100vw;
+    height: 60vh;
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+    top: 26px;
+    left: 0px;
+}
+main #searchFilterContainer #dropdown #filterListContainer .listSection{
+    width: 33%;
+    max-width: 33%;
+    height: 98%;
+    overflow: scroll;
+}
+
+main #searchFilterContainer #dropdown #filterListContainer .listSection h3{
+    font-family:'Yusei Magic';
+    margin: 0px;
+    border-bottom: 1px solid  #a4b0be;
+    text-align: center;
+    color: black;
+}
+main #searchFilterContainer #dropdown #filterListContainer .listSection ul{
+    padding-left: 20px;
+}
+#ingredientList,#areaList{
+    border-right:2px solid  #a4b0be;
+}
+main #searchFilterContainer #dropdown #filterListContainer .listSection ul filter-item li{
+    cursor: pointer;
+    font-size: 14px;
+}
+main #searchFilterContainer #dropdown #filterListContainer .listSection ul filter-item li:hover{
+    background-color: red;
+    color: white;
+}
+
+/* food item */
+main #foodsContainer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+main #foodsContainer food-item .foodItemContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 250px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    border: 2px solid  #a4b0be;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: bold;
+}
+main #foodsContainer food-item div img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 5px;
+}
+main #foodsContainer food-item .foodItemContainer button{
+    background-color: red;
+    color: white;
+    margin: 5px 0px;
+    border: none;
+    text-align: center;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 14px;
+}
+main #foodsContainer #failSearch{
+    text-align: center;
+    grid-column:1/5;
+}
+
+@media (min-width:675px)  {
+    main #searchFilterContainer #searchForm input,main #searchFilterContainer #searchForm button, 
+    main #searchFilterContainer #dropdown button{
+        font-size: 20px;
+    }
+    main #searchFilterContainer #dropdown:hover #filterListContainer{
+        top: 35px;
+        border-radius: 30px;
+    }
+    main #searchFilterContainer #dropdown #filterListContainer #categoryList{
+        overflow: hidden;
+    }
+    main #searchFilterContainer #dropdown #filterListContainer .listSection ul filter-item li{
+        font-size: 16px;
+    }    
+    main #foodsContainer{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+
+}
+@media (min-width:975px)  {
+    main #foodsContainer{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (min-width:1275px)  {
+    main #foodsContainer{
+        grid-template-columns: auto auto auto auto;
+    }
+}

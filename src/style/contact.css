@@ -1,0 +1,94 @@
+main #contactContainer{
+    flex-grow: 1;
+}
+main #contactContainer #contactTitleContainer{
+    background-color: rgba(255,0,0,0.75);
+    text-align: center;
+    
+}
+main #contactContainer #contactTitleContainer #contactTitle{
+    display: block;
+    color: white;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+main #contactContainer #contactTitleContainer #contactSubTitle{
+    color: white;
+    display: block;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+main #contactContainer #contactList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+
+main #contactContainer #contactList contact-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 250px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    border: 2px solid  #a4b0be;
+    font-family: 'Yusei Magic', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+main #contactContainer #contactList contact-item i{
+    font-size: 65px;
+    margin: 15px 0px;
+    display: block;
+    color: red;
+}
+main #contactContainer #contactList contact-item .contactItemTitle{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+main #contactContainer #contactList contact-item .contactSubTitle{
+    display: block;
+    font-family:sans-serif;
+    margin-bottom: 15px;
+}
+main #contactContainer #contactList contact-item button{
+    margin: 15px 0px;
+    background-color: red;
+    color: white;
+    border: none;
+    text-align: center;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 14px;
+}
+@media (min-width:675px)  {
+    main #contactContainer #contactList{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+    main #contactContainer #contactTitleContainer #contactTitle{
+        font-size: 80px;
+    }
+    main #contactContainer #contactTitleContainer #contactSubTitle{
+        font-size: 18px;
+    }
+}
+/* untuk sementara contactnya 2 aja dulu */
+/* @media (min-width:975px)  {
+    main #contactContainer #contactList{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (min-width:1275px)  {
+    main #contactContainer #contactList{
+        grid-template-columns: auto auto auto auto;
+    }
+} */

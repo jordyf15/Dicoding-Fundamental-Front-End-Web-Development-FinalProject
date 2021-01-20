@@ -1,0 +1,39 @@
+main #homeContainer{
+    background-color: rgba(206, 214, 224,0.5);
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Yusei Magic', sans-serif;
+    padding: 0px 20px;
+}
+main #homeContainer #titleHome{
+    font-size: 60px;
+}
+main #homeContainer #homeFoodIcons{
+    font-size: 18px;
+}
+main #homeContainer #homeText{
+    font-size: 16px;
+}
+main #homeContainer #titleHome #homeTitleLogo{
+    background-color: red;
+    color: white;
+}
+
+@media (min-width:675px)  {
+    main #homeContainer #titleHome{
+        font-size: 100px;
+    }
+    main #homeContainer #homeFoodIcons{
+        font-size: 30px;
+    }
+    main #homeContainer #homeText{
+        font-size:32px;
+    }
+}
+
+
+

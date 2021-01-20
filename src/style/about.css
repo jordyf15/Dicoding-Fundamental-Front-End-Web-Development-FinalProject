@@ -1,0 +1,35 @@
+main #aboutContainer #aboutImg{
+    background-image: url("https://i.pinimg.com/originals/a5/1b/5d/a51b5dc635c5883ac57da7fb6e7e7b37.jpg");
+    height: 30vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    color: white;
+    font-weight: bold;
+}
+main #aboutContainer{
+    flex-grow: 1;
+    font-family: 'Yusei Magic', sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+main #aboutContainer #aboutDesc{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    font-weight: bold;
+    font-size: 15px;
+    flex-grow: 1;
+}
+@media (min-width:675px)  {
+    main #aboutContainer #aboutImg{
+        height: 50vh;
+        font-size: 60px;
+    }
+    main #aboutContainer #aboutDesc{
+        font-size: 26px;
+    }
+}

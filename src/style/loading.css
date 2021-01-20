@@ -1,0 +1,36 @@
+main #loadingContainer{
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: bold;
+    
+}
+#loading {
+    width: 20px;
+    height: 20px;
+    margin: 15px auto 0px;
+    border: 6px solid white; 
+    border-top: 6px solid red; 
+    box-shadow: 0px 0px 0px 2px #a4b0be;
+    position: relative;
+    z-index: -1;
+  
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @media (min-width:675px)  {
+    #loading {
+        width: 40px;
+        height: 40px;
+        border: 12px solid white; 
+        border-top: 12px solid red; 
+    }
+    main #loadingContainer{
+        font-size: 20px;
+    }
+  }
